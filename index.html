@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Study Planner</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Optional: External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen p-4">
+  <div class="max-w-2xl mx-auto">
+    <!-- Header -->
+    <div class="text-center mb-8">
+      <h1 class="text-3xl font-bold text-indigo-800 mb-2">📚 Study Planner</h1>
+      <p class="text-gray-600">Plan your study sessions and track your progress</p>
+    </div>
+
+    <!-- Add Study Session Form -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+      <h2 class="text-xl font-semibold text-gray-800 mb-4">Add Study Session</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input type="text" id="subject" placeholder="Subject (e.g., Math, History)" class="input" />
+        <input type="text" id="topic" placeholder="Topic to study" class="input" />
+        <input type="date" id="date" class="input" />
+        <input type="time" id="time" class="input" />
+      </div>
+      <button onclick="addStudySession()" class="btn-primary mt-4">
+        Add Session
+      </button>
+    </div>
+
+    <!-- Study Sessions List -->
+    <div class="bg-white rounded-lg shadow-md p-6">
+      <h2 class="text-xl font-semibold text-gray-800 mb-4">Upcoming Sessions</h2>
+      <div id="sessionsList" class="space-y-3"></div>
+      <div id="emptyState" class="text-center text-gray-500 py-8">
+        No study sessions planned yet. Add your first session above! 📝
+      </div>
+    </div>
+  </div>
+
+  <!-- JS Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
