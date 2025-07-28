@@ -1,5 +1,4 @@
 # personal-study-planner-app
-Sure Guru Saran! Here are detailed, professional, and clear **README points** for your **Personal Study Planner App** GitHub repository:
 
 
 📚 Personal Study Planner App
@@ -30,14 +29,6 @@ The **Personal Study Planner App** is a simple and intuitive tool designed to he
 
 ---
 
-📸 Screenshots
-
-Include screenshots/gifs of:
-
-* Dashboard view
-* Add task form
-* Progress tracker
-* Weekly calendar view
 
 📌 Future Improvements
 
